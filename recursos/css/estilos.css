@@ -337,6 +337,44 @@ section h3 {
     color: red;
 }
 
+.especialidades{
+    width: 100%;
+    /* font-size: 40px; */
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    justify-content: center;
+    /* border: black 5px 10%; */
+}
+
+.h3espec{
+    width: 100%;
+    /* font-size: 40px; */
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    justify-content: center;
+    /* border: black 5px 10%; */
+}
+
+.pespec{
+    width: 100%;
+    /* font-size: 40px; */
+    padding: 5px;
+    margin: 5px;
+    /* font-family: 'Noto Sans', sans-serif; */
+    text-align: center;
+    justify-content: center;
+    /* border: black 5px 10%; */
+}
+
+
+
+
+
+
 
 /* Reseñas */
 
