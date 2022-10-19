@@ -435,3 +435,17 @@ textarea.input1 + .shadow-input1 {
     opacity: 1;
   }
 }
+
+
+.btnvolver{
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  font-size: 20px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  border-radius: 30%;
+  padding: 10px 15px 10px 15px;
+  font-family: 'Noto Sans', sans-serif;
+}
