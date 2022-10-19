@@ -230,7 +230,8 @@ div img {
 }
 
 .imagen {
-    background-image: url(/recursos/img/Relleno.jpg);
+    background: url(/recursos/img/grande.jpg) no-repeat center center;
+background-size: cover;
     padding: 0;
     height: 700px;
     width: 50%;
