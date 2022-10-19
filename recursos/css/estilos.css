@@ -337,7 +337,7 @@ section h3 {
     color: red;
 }
 
-.especialidades{
+.especialidades {
     width: 100%;
     /* font-size: 40px; */
     padding: 5px;
@@ -348,7 +348,7 @@ section h3 {
     /* border: black 5px 10%; */
 }
 
-.h3espec{
+.h3espec {
     width: 100%;
     /* font-size: 40px; */
     padding: 5px;
@@ -359,7 +359,7 @@ section h3 {
     /* border: black 5px 10%; */
 }
 
-.pespec{
+.pespec {
     width: 100%;
     /* font-size: 40px; */
     padding: 5px;
@@ -378,25 +378,21 @@ section h3 {
 
 /* Reseñas */
 
-.contenedor {
+.conte {
     width: 90%;
     max-width: 1000px;
     /*ancho máximo de la página*/
     margin: 20px auto;
-    /*auto permite centrar nuestra página en forma horizontal*/
     display: grid;
     gap: 20px;
-    /*nos ahorramos tenes que poner márgenes entre los elementos*/
 
-    /*3 columnas: contenido (con 2 widgets) + sidebar*/
     grid-template-columns: repeat(4, 1fr);
 
-    /*4 filas: header, contenido, widgets, footer*/
     grid-template-rows: repeat(4, auto);
 
     grid-template-areas: "encabezado encabezado encabezado encabezado"
         "opinion1 opinion2 opinion3 sidebar"
-        "opnion4 opinion5 opinion6 sidebar"
+        "opinion4 opinion5 opinion6 sidebar"
         "pie pie pie pie";
 }
 
@@ -404,16 +400,16 @@ section h3 {
     background-color: chocolate;
 }
 
-.contenedor>div,
-.contenedor .encabezado,
-.contenedor .contenido,
-.contenedor .sidebar,
-.contenedor .pie {
+.conte>div,
+.conte .encabezado,
+.conte .contenido,
+.conte .sidebar,
+.conte .pie {
     padding: 20px;
     border-radius: 4px;
 }
 
-.contenedor .encabezado {
+.conte .encabezado {
     background: chocolate;
     color: brown;
     grid-area: encabezado;
@@ -422,12 +418,12 @@ section h3 {
     font-size: 2.5em;
 }
 
-.contenedor .contenido {
+.conte .contenido {
     background: #fff;
     grid-area: contenido;
 }
 
-.contenedor .sidebar {
+.conte .sidebar {
     background: orange;
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
@@ -437,13 +433,13 @@ section h3 {
     object-fit: contain;
 }
 
-.contenedor .opinion1,
-.contenedor .opinion3,
-.contenedor .opinion4,
-.contenedor .opinion4,
-.contenedor .opinion5,
-.contenedor .opinion6,
-.contenedor .opinion2 {
+.conte .opinion1,
+.conte .opinion3,
+.conte .opinion4,
+.conte .opinion4,
+.conte .opinion5,
+.conte .opinion6,
+.conte .opinion2 {
     background: rgb(82, 109, 126);
     color: white;
     height: 100px;
@@ -454,15 +450,32 @@ section h3 {
     font-family: 'Ms Madi', cursive;
 }
 
-.contenedor .widget-1 {
-    grid-area: widget-1;
+.conte .opinion1 {
+    grid-area: opinion1;
 }
 
-.contenedor .widget-2 {
-    grid-area: widget-2;
+.conte .opinion2 {
+    grid-area: opinion2;
 }
 
-.contenedor .pie {
+.conte .opinion3 {
+    grid-area: opinion3;
+}
+
+.conte .opinion4 {
+    grid-area: opinion4;
+}
+
+.conte .opinion5 {
+    grid-area: opinion5;
+}
+
+.conte .opinion6 {
+    grid-area: opinion6;
+}
+
+
+.conte .pie {
     background: chocolate;
     color: brown;
     grid-area: pie;
@@ -471,27 +484,32 @@ section h3 {
     font-size: 2em;
 }
 
-@media screen and (max-width: 768px) {
-    .contenedor {
+@media screen and (max-width: 910px) {
+    .conte {
         grid-template-areas: "encabezado encabezado encabezado encabezado"
-            "opinion1 opinion1 opinion2 sidebar"
-            "opinion3 opinion4 opinion4 sidebar"
-            "opinion5 opinion5 opinion6 sidebar"
+            "opinion1 opinion1 opinion2 opinion2"
+            "opinion3 opinion3 opinion4 opinion4"
+            "opinion5 opinion5 opinion6 opinion6"
             "pie pie pie pie";
+    }
+
+    .conte .sidebar {
+        display: none;
     }
 }
 
-@media screen and (max-width: 450px) {
-    .contenedor {
+@media screen and (max-width: 600px) {
+    .conte {
         grid-template-areas: "encabezado encabezado encabezado encabezado"
             "opinion1 opinion1 opinion1 sidebar"
             "opinion2 opinion2 opinion2 sidebar"
             "opinion3 opinion3 opinion3 sidebar"
             "opinion4 opinion4 opinion4 sidebar"
-            "opinio5 opinion5 opinion5 sidebar"
+            "opinion5 opinion5 opinion5 sidebar"
             "opinion6 opinion6 opinion6 sidebar"
             "pie pie pie pie";
     }
+
 }
 
 /* Boton Ir Arriba */
