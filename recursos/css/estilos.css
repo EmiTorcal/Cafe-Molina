@@ -535,8 +535,9 @@ section h3 {
 
 .ubicacion1 {
     padding: 5px;
-    /* margin: 5px; */
-    font-family: 'Ms Madi', cursive;
+    margin: 5px;
+    /* font-family: 'Ms Madi', cursive; */
+    font-family: 'Noto Sans', sans-serif;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -551,6 +552,7 @@ iframe {
 }
 
 .contenedor-contactos {
+    background-color: chocolate;
     width: 100%;
     /* height: 100vh; */
     /* background-color: aliceblue; */
