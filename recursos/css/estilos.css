@@ -14,6 +14,7 @@ body {
 }
 
 /* Header */
+
 header {
     width: 100%;
     height: 80px;
@@ -69,7 +70,6 @@ header nav a:hover {
 .nav_label,
 .nav_input {
     display: none;
-    /* margin: 0 auto; */
 }
 
 .header2 {
@@ -103,7 +103,6 @@ header nav a:hover {
 
     header,
     .header2 {
-        /* width: 100%; */
         flex-direction: column;
         text-align: center;
         line-height: 50px;
@@ -154,8 +153,6 @@ header nav a:hover {
     .nav_input:checked+.nav_menu {
         clip-path: circle(100% at center);
     }
-
-
 }
 
 
@@ -188,7 +185,6 @@ div img {
 @media screen and (max-width: 910px) {
 
     .containerinicio {
-
         height: 500px;
     }
 
@@ -231,7 +227,7 @@ div img {
 
 .imagen {
     background: url(/recursos/img/grande.jpg) no-repeat center center;
-background-size: cover;
+    background-size: cover;
     padding: 0;
     height: 700px;
     width: 50%;
@@ -279,28 +275,16 @@ section h3 {
 }
 
 .container-especialidades {
-    /* width: 100%;
-    height: 100vh; */
     background-color: aliceblue;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    /* justify-content: stretch; */
-    /* grid-template-columns: auto; */
     justify-content: center;
     align-items: center;
     background-color: #fff;
 }
 
-/* @media screen and (max-width: 400px) {
-    .box-especialidades img{
-        width: 400px;
-    }    
-} */
-
 .box-especialidades {
     width: 250px;
-    /* width: 13%; */
     height: 40vh;
     text-align: center;
     overflow: hidden;
@@ -312,9 +296,7 @@ section h3 {
 .box-especialidades img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
     object-fit: inherit;
-    /* object-fit: contain; */
 }
 
 .box-especialidades .esconder {
@@ -328,7 +310,6 @@ section h3 {
     align-items: center;
     overflow: hidden;
     transition: .5s all;
-    /* text-align: center; */
 }
 
 .esconder h3 {
@@ -339,13 +320,6 @@ section h3 {
 .box-especialidades:hover .esconder {
     width: 100%;
 }
-
-/* img{
-	display: block;
-	border:0;
-	width: 100%;
-	height: auto;
-} */
 
 .menu2>a {
     text-decoration: none;
@@ -419,8 +393,6 @@ section h3 {
     background: orange;
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
-    /* align-items: center;
-    justify-content:baseline ; */
     background-image: url("/recursos/img/cafeHumeante.jpg");
     grid-area: sidebar;
     max-width: 100% max-height=100%;
@@ -502,7 +474,7 @@ section h3 {
     border-radius: 10%;
 }
 
-/* UBICACIÓN */
+/* Ubicacion */
 
 .locales {
     text-align: center;
@@ -514,7 +486,6 @@ section h3 {
 
 .direccion {
     text-decoration: none;
-    /* color: grey; */
     font-family: cursive;
     font-weight: 100;
 }
@@ -537,7 +508,6 @@ section h3 {
 .ubicacion1 {
     padding: 5px;
     margin: 5px;
-    /* font-family: 'Ms Madi', cursive; */
     font-family: 'Noto Sans', sans-serif;
     width: 100%;
     text-align: center;
@@ -555,28 +525,14 @@ iframe {
 .contenedor-contactos {
     background-color: chocolate;
     width: 100%;
-    /* height: 100vh; */
-    /* background-color: aliceblue; */
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    /* justify-content: stretch; */
-    /* grid-template-columns: auto; */
     justify-content: center;
     align-items: center;
-    /* background-color: #fff; */
 }
-
-/* @media screen and (max-width: 400px) {
-    .box-especialidades img{
-        width: 400px;
-    }    
-} */
 
 .box-contacto {
     width: 250px;
-    /* width: 13%; */
-    /* height: 40vh; */
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -585,21 +541,20 @@ iframe {
     font-family: cursive;
 }
 
-.box-contacto > h2 {
+.box-contacto>h2 {
     border-bottom: 1px dotted;
 }
 
-.box-contacto > h3 {
+.box-contacto>h3 {
     font-size: 15px;
 }
 
-.box-contacto > a {
+.box-contacto>a {
     text-decoration: none;
     color: black;
-    /* font-weight: bold; */
 }
 
-.contenedor-footer{
+.contenedor-footer {
     background-color: chocolate;
     width: 100%;
     display: flex;
@@ -609,7 +564,7 @@ iframe {
     align-items: center;
 }
 
-.contenedor-footer a{
+.contenedor-footer a {
     padding: 1%;
     font-size: 25px;
     text-decoration-line: underline;
